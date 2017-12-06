@@ -1,0 +1,66 @@
+
+<ion-view view-title="校园新闻" class="ion-view-positive" >
+  <ion-nav-buttons side="right">
+    <i class="icon ion-android-search" style="font-size: 30px;margin-top:3px;margin-right:5px; color:white;" ng-click="searchs()"></i>
+  </ion-nav-buttons>
+
+  <div class="tabs-striped tabs-top tabs-background-light tabs-color-dark">
+    <div class="tabs">
+      <a class="tab-item active" href="#">
+        头条
+      </a>
+      <a class="tab-item" href="#/app/newshappy">
+        娱乐
+      </a>
+      <a class="tab-item"  href="#">
+        学习
+      </a>
+      <a class="tab-item"  href="#">
+        交友
+      </a>
+      <a class="tab-item" href="#">
+        活动
+      </a>
+    </div>
+  </div>
+
+  <ion-content>
+    <!-- start 轮播图-->
+    <ion-slide-box auto-play="true" does-continue="true" slide-interval=2000 id="newsbanner">
+      <ion-slide>
+        <div class="box banner"><img src="./img/new-banner1.jpg" /> </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="box banner"><img src="./img/new-banner1.jpg" /></div>
+      </ion-slide>
+      <ion-slide on-slide-changed="slideHasChanged(index)">
+        <div class="box banner"><img src="./img/new-banner1.jpg" /></div>
+      </ion-slide>
+    </ion-slide-box>
+      <div id="lunbtitle">
+        杂志实拍校园
+      </div>
+
+    <ion-list>
+      <!--<ion-item ng-repeat="x in newslists" href="#/app/playlists/{{playlist.id}}">-->
+
+        <!--<img src="{{x.img}}" alt="">-->
+        <!--<h3>{{x.title}}</h3>-->
+        <!--<p>{{}}</p>-->
+      <!--</ion-item>-->
+
+      <ion-item class="item-remove-animate item-thumbnail-left " ng-repeat="x in newslists" type="item-text-wrap" ng-href="#/app/newsdetail/{{x.id}}" id="newslists">
+        <img ng-src="{{x.img}}" id="dd">
+        <h2>{{x.title}}</h2>
+        <p>{{x.ps}}</p>
+
+       <div id="news-del">
+         <span id="newsdate">5小时前</span>
+         <i class="icon ion-thumbsup" id="newsicon-zan"></i><span>123</span>
+         <i class="icon ion-android-hangout" id="newsicon-xx"></i><span side="right">365</span>
+       </div>
+      </ion-item>
+
+    </ion-list>
+  </ion-content>
+</ion-view>

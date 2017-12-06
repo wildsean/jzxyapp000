@@ -69,7 +69,7 @@
 
   // Different themes for items
   &.item-light {
-    @include item-style($item-light-bg, $item-light-border, $item-light-text);
+    @incldue item-style($item-light-bg, $item-light-border, $item-light-text);
   }
   &.item-stable {
     @include item-style($item-stable-bg, $item-stable-border, $item-stable-text);

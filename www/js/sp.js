@@ -3,4 +3,5 @@ window.onload =function(){
   console.log(Ww);
   var scale=Ww/640;
   document.getElementsByTagName('html')[0].style.fontSize = scale*100+'px';
-};
+}
+// var b=[];

@@ -8,33 +8,46 @@
         <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
         </button>
       </ion-nav-buttons>
+      <ion-nav-buttons side="right" >
+        <i class="icon ion-android-search" style="font-size: 30px;margin-top:3px;margin-right:5px;" ng-click="searchs()"></i>
+      </ion-nav-buttons>
     </ion-nav-bar>
     <ion-nav-view name="menuContent"></ion-nav-view>
   </ion-side-menu-content>
 
   <ion-side-menu side="left">
-    <ion-header-bar class="bar-stable">
-      <h1 class="title">Left</h1>
+    <ion-header-bar class="bar-positive">
+      <i class="icon ion-chevron-left r-jt"></i>
+      <h1 class="title"></h1>
+      <span class="button icon ion-person"></span>
     </ion-header-bar>
     <ion-content>
       <ion-list>
-        <ion-item menu-close ng-click="login()">
-          Login
-        </ion-item>
-        <ion-item menu-close href="#/app/search">
-          Search
-        </ion-item>
-        <ion-item menu-close href="#/app/browse">
-          Browse
-        </ion-item>
-        <ion-item menu-close href="#/app/playlists">
-          Playlists
-        </ion-item>
-        <ion-item menu-close href="#/app/newshome">
+        <ion-item menu-close  href="#/app/newshome">
           校园新闻
+          <i class="icon ion-chevron-right l-jt"></i>
+        </ion-item>
+        <ion-item  href="">
+          教育培训
+          <i class="icon ion-chevron-right l-jt"></i>
+        </ion-item>
+        <ion-item  href="">
+          微圈子
+          <i class="icon ion-chevron-right l-jt"></i>
+        </ion-item>
+        <ion-item  href="">
+          跳蚤市场
+          <i class="icon ion-chevron-right l-jt"></i>
+        </ion-item>
+        <ion-item menu-close href="#/app/market">
+          兼职吧
+          <i class="icon ion-chevron-right l-jt"></i>
+        </ion-item>
+        <ion-item  href="">
+          个人中心
+          <i class="icon ion-chevron-right l-jt"></i>
         </ion-item>
       </ion-list>
     </ion-content>
   </ion-side-menu>
-
 </ion-side-menus>

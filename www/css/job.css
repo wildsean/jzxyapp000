@@ -1,0 +1,225 @@
+/* Empty. Add your own CSS if you like */
+
+/*  market.html */
+.navs{
+  width: 100%;
+  height: 3.6rem;
+  overflow: hidden;
+}
+.navs li{
+  width: 0.82rem;
+  text-align: center;
+  font-size:0.22rem;
+  font-weight:bolder;
+  float: left;
+  margin-left:0.4rem;
+  margin-right:0.3rem;
+  margin-top:0.3rem;
+  cursor: pointer;
+}
+.navs li img{
+  width: 0.82rem;
+  height: 0.82rem;
+}
+.xiaoxi{
+  width: 6.15rem;
+  margin: 0 auto;
+  font-size:0.3rem;
+  color: #9a9a9a;
+  padding:0.2rem 0;
+  border-bottom:0.01rem solid #9a9a9a;
+}
+.xiaoxi img{
+  width: 0.26rem;
+  height: 0.28rem;
+}
+.lists{
+  width: 6.15rem;
+  margin:0 auto;
+}
+.lists *{
+  margin: 0;
+  padding: 0;
+}
+.lists #lis{
+  margin: 0 auto;
+  overflow: hidden;
+  font-size: 12px;
+  margin-left: 0.12rem;
+  padding:0.1rem 0;
+  cursor: pointer;
+}
+#lis img{
+  width: 1.69rem;
+  height: 1.17rem;
+  float: left;
+}
+#lis .box{
+  width: 4.34rem;
+  font-size: 0.14rem;
+  float: left;
+  margin-left:0.1rem;
+  position: relative;
+}
+#lis .box>h3{
+  font-size:0.22rem;
+}
+#lis .box>span img{
+  width: 0.20rem;
+  height: 0.20rem;
+}
+#lis .box>div{
+  position: absolute;
+  top:0;
+  right:0;
+}
+#lis .box>div>span:nth-child(1){
+  color: #f60;
+}
+.lists .item-complex .item-content {
+  padding: 0;
+
+}
+
+/*  menu.html  */
+.l-jt{
+  float: right;
+}
+.r-jt{
+  font-size: 0.5rem;
+  margin-top:0.08rem;
+}
+
+/*  infoList.html  */
+.sear{
+  width: 100%;
+  overflow: hidden;
+}
+.sear>input{
+  font-size:0.24rem;
+  color: #cdcdcd;
+  width: 4.48rem;
+  height: 0.54rem;
+  border: 0.01rem solid #cdcdcd;
+  border-radius: 0.1rem;
+  float: left;
+  margin: 0.15rem 0.15rem;
+}
+.sear>button{
+  float: left;
+  display: inline-block;
+  width: 1.42rem;
+  background-color: #4b94eb;
+  height: 0.56rem;
+  font-size:0.24rem;
+  color: #ffffff;
+  margin-top:0.15rem;
+}
+
+/*  detail.html  */
+.area{
+  width: 100%;
+}
+.ban{
+  width: 6.01rem;
+  height: 2.45rem;
+  margin: 0.2rem 0.2rem;
+}
+.jieshao{
+  width: 6.01rem;
+  border-bottom:0.01rem solid #dedede;
+  margin: 0 0.2rem;
+  position: relative;
+}
+.jieshao *{
+  margin: 0;
+  padding: 0;
+}
+.jieshao>h3{
+  font-size:0.24rem;
+  margin-bottom:0.1rem;
+}
+.jieshao>p{
+  color: #9a9a9a;
+  font-size: 0.16rem;
+}
+.jieshao>div{
+  position: absolute;
+  top:0;
+  right:0;
+  font-size: 0.18rem;
+}
+.jieshao>div>span:nth-child(1){
+  color: #f60;
+}
+.jieshao>div>span:nth-child(2){
+  color: #9a9a9a;
+}
+.lianxi{
+  width: 6.01rem;
+  margin: 0 0.2rem;
+}
+.lianxi>li{
+  font-size: 0.16rem;
+  color: #9a9a9a;
+  margin: 0.1rem 0;
+}
+.lianxi>li:nth-child(1){
+  margin-top:0.2rem;
+}
+.lianxi>li>img{
+  width: 0.2rem;
+  height: 0.2rem;
+  margin-right:0.05rem;
+}
+.con-job{
+  width: 100%;
+  margin-top:0.2rem;
+}
+.job{
+  width: 6.01rem;
+  margin: 0 0.2rem;
+
+}
+.job *{
+  margin: 0;
+  padding: 0;
+}
+.job>.biaoti{
+  width: 100%;
+  /*background-color: pink;*/
+  /*border-bottom:0.01rem solid #dedede;*/
+}
+.job>.biaoti>h3{
+  font-size: 0.2rem;
+  padding:0.2rem 0;
+}
+.job>.job-detail{
+  width: 100%;
+  border-top:0.01rem solid #dedede;
+  font-size: 0.14rem;
+  padding-top:0.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

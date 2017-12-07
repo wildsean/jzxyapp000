@@ -99,6 +99,39 @@ angular.module('starter', ['ionic', 'starter.controllers'])
           }
         }
       })
+
+
+    //job路由
+      .state('app.market', {
+        url: '/market',
+        views: {
+          'menuContent': {
+            templateUrl: 'templates/market.html',
+            controller: 'PlaylistsCtrl'
+          }
+        }
+      })
+      .state('app.infoList', {
+        url: '/infoList',
+        views: {
+          'menuContent': {
+            templateUrl: 'templates/infoList.html',
+            controller: 'AppCtrl'
+          }
+        }
+      })
+      .state('app.detail', {
+        url: '/detail/:id',
+        views: {
+          'menuContent': {
+            templateUrl: 'templates/detail.html',
+            controller: 'PlaylistsCtrl'
+          }
+        }
+      });
+
+
+
     // if none of the above states are matched, use this as the fallback
-    // $urlRouterProvider.otherwise('/app/playlists');
+    $urlRouterProvider.otherwise('/app/playlists');
   });

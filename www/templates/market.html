@@ -1,0 +1,57 @@
+<ion-view view-title="兼职">
+  <ion-content id="mm">
+    <ul class="navs">
+      <li>
+        <img src="../img/nav01.png" alt="">
+        <p>家教</p>
+      </li>
+      <li>
+        <img src="../img/nav02.png" alt="">
+        <p>促销</p>
+      </li>
+      <li>
+        <img src="../img/nav03.png" alt="">
+        <p>演艺</p>
+      </li>
+      <li>
+        <img src="../img/nav04.png" alt="">
+        <p>礼仪</p>
+      </li>
+      <li>
+        <img src="../img/nav05.png" alt="">
+        <p>翻译</p>
+      </li>
+      <li>
+        <img src="../img/nav06.png" alt="">
+        <p>传单</p>
+      </li>
+      <li>
+        <img src="../img/nav07.png" alt="">
+        <p>网络</p>
+      </li>
+      <li>
+        <img src="../img/nav08.png" alt="">
+        <p>其它</p>
+      </li>
+    </ul>
+    <div class="xiaoxi">
+      <img src="../img/laba.jpg" alt="">
+      <span>最新兼职</span>
+    </div>
+    <ion-list class="lists">
+      <ion-item class="item-remove-animate" id="lis" ng-repeat="x in infolist" type="item-text-wrap" ng-href="#/app/detail/{{x.id}}">
+        <img ng-src="{{x.img1}}" alt="">
+        <div class="box">
+          <h3>{{x.h3}}</h3>
+          <span><img ng-src="{{x.img2}}" alt="">{{x.time}}</span><br>
+          <span><img ng-src="{{x.img3}}" alt="">{{x.address}}</span>
+          <div>
+            <span>{{x.money}}</span>
+            <span>{{x.day}}</span>
+          </div>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
+

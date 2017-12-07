@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-  .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
+  .controller('AppCtrl', function($scope, $ionicModal, $timeout,$location) {
 
     // With the new view caching in Ionic, Controllers are only called
     // when they are recreated or on app start, instead of every page change.
@@ -39,20 +39,37 @@ angular.module('starter.controllers', [])
         $scope.closeLogin();
       }, 1000);
     };
-  })
-
-  .controller('PlaylistsCtrl', function($scope) {
-    $scope.playlists = [
-      { title: 'Reggae', id: 1 },
-      { title: 'Chill', id: 2 },
-      { title: 'Dubstep', id: 3 },
-      { title: 'Indie', id: 4 },
-      { title: 'Rap', id: 5 },
-      { title: 'Cowbell', id: 6 }
+    $scope.searchs = function () {
+      $location.path('/app/infoList');
+    };
+    $scope.infolist=[
+      {h3:'服务员专场面试会',id:1,img1:'./img/info01.jpg',img2:'./img/biao.png',img3:'./img/dibiao.png',time:'面试时间10月8日10:00-16:00',address:'面试地点石景山总工会2层博看文思',money:'￥ 200',day:'/天'},
+      {h3:'服务员专场面试会',id:2,img1:'./img/info02.jpg',img2:'./img/biao.png',img3:'./img/dibiao.png',time:'面试时间10月8日10:00-16:00',address:'面试地点石景山总工会2层博看文思',money:'￥ 200',day:'/天'},
+      {h3:'服务员专场面试会',id:3,img1:'./img/info03.jpg',img2:'./img/biao.png',img3:'./img/dibiao.png',time:'面试时间10月8日10:00-16:00',address:'面试地点石景山总工会2层博看文思',money:'￥ 200',day:'/天'},
+      {h3:'服务员专场面试会',id:4,img1:'./img/info04.jpg',img2:'./img/biao.png',img3:'./img/dibiao.png',time:'面试时间10月8日10:00-16:00',address:'面试地点石景山总工会2层博看文思',money:'￥ 200',day:'/天'},
+      {h3:'服务员专场面试会',id:1,img1:'./img/info01.jpg',img2:'./img/biao.png',img3:'./img/dibiao.png',time:'面试时间10月8日10:00-16:00',address:'面试地点石景山总工会2层博看文思',money:'￥ 200',day:'/天'},
+      {h3:'服务员专场面试会',id:2,img1:'./img/info02.jpg',img2:'./img/biao.png',img3:'./img/dibiao.png',time:'面试时间10月8日10:00-16:00',address:'面试地点石景山总工会2层博看文思',money:'￥ 200',day:'/天'},
+      {h3:'服务员专场面试会',id:3,img1:'./img/info03.jpg',img2:'./img/biao.png',img3:'./img/dibiao.png',time:'面试时间10月8日10:00-16:00',address:'面试地点石景山总工会2层博看文思',money:'￥ 200',day:'/天'},
+      {h3:'服务员专场面试会',id:4,img1:'./img/info04.jpg',img2:'./img/biao.png',img3:'./img/dibiao.png',time:'面试时间10月8日10:00-16:00',address:'面试地点石景山总工会2层博看文思',money:'￥ 200',day:'/天'}
     ];
   })
 
-  .controller('PlaylistCtrl', function($scope, $stateParams) {
+  .controller('PlaylistsCtrl', function($scope,$location,$stateParams) {
+    // $scope.detail = function () {
+    //   $location.path('/app/detail/{{}}');
+    // };
+    $scope.infolist=[
+      {h3:'服务员专场面试会',id:1,img1:'./img/info01.jpg',img2:'./img/biao.png',img3:'./img/dibiao.png',time:'面试时间10月8日10:00-16:00',address:'面试地点石景山总工会2层博看文思',money:'￥ 200',day:'/天'},
+      {h3:'服务员专场面试会',id:2,img1:'./img/info02.jpg',img2:'./img/biao.png',img3:'./img/dibiao.png',time:'面试时间10月8日10:00-16:00',address:'面试地点石景山总工会2层博看文思',money:'￥ 200',day:'/天'},
+      {h3:'服务员专场面试会',id:3,img1:'./img/info03.jpg',img2:'./img/biao.png',img3:'./img/dibiao.png',time:'面试时间10月8日10:00-16:00',address:'面试地点石景山总工会2层博看文思',money:'￥ 200',day:'/天'},
+      {h3:'服务员专场面试会',id:4,img1:'./img/info04.jpg',img2:'./img/biao.png',img3:'./img/dibiao.png',time:'面试时间10月8日10:00-16:00',address:'面试地点石景山总工会2层博看文思',money:'￥ 200',day:'/天'}
+    ];
+    $scope.lists = $scope.infolist[$stateParams.id-1];
+    console.log($scope.lists );
+  })
+
+
+.controller('PlaylistCtrl', function($scope, $stateParams) {
   })
 
   .controller('newshomeCtrl', function($scope, $stateParams) {

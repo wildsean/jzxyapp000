@@ -1,0 +1,28 @@
+<ion-view view-title="列表">
+  <ion-content>
+    <div class="sear">
+      <input type="text" placeholder="搜索你想要的">
+      <button>
+        <i class="ion-search"></i>
+        搜索
+      </button>
+    </div>
+    <ion-list class="lists">
+      <ion-item class="item-remove-animate "id="lis" ng-repeat="x in infolist" type="item-text-wrap" ng-href="#/app/detail/{{x.id}}">
+        <img ng-src="{{x.img1}}" alt="">
+        <div class="box">
+          <h3>{{x.h3}}</h3>
+          <span><img ng-src="{{x.img2}}" alt="">{{x.time}}</span><br>
+          <span><img ng-src="{{x.img3}}" alt="">{{x.address}}</span>
+          <div>
+            <span>{{x.money}}</span>
+            <span>{{x.day}}</span>
+          </div>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+
+</ion-view>
+
+

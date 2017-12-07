@@ -50,25 +50,17 @@ angular.module('starter', ['ionic', 'starter.controllers'])
           }
         }
       })
-      .state('app.playlists', {
-        url: '/playlists',
-        views: {
-          'menuContent': {
-            templateUrl: 'templates/playlists.html',
-            controller: 'PlaylistsCtrl'
-          }
-        }
-      })
 
-      .state('app.single', {
-        url: '/playlists/:playlistId',
-        views: {
-          'menuContent': {
-            templateUrl: 'templates/playlist.html',
-            controller: 'PlaylistCtrl'
-          }
-        }
-      })
+
+      // .state('app.single', {
+      //   url: '/playlists/:playlistId',
+      //   views: {
+      //     'menuContent': {
+      //       templateUrl: 'templates/playlist.html',
+      //       controller: 'PlaylistCtrl'
+      //     }
+      //   }
+      // })
 
       .state('app.newshome', {
         url: '/newshome',
@@ -128,9 +120,115 @@ angular.module('starter', ['ionic', 'starter.controllers'])
             controller: 'PlaylistsCtrl'
           }
         }
+      })
+
+
+    /***************** 跳蚤市场 *****************/
+    //跳蚤 首页
+    .state('app.playlists', {
+        url: '/playlists',
+        views: {
+          'menuContent': {
+            templateUrl: 'templates/fleaMarket/tz-home.html',
+            controller: 'tzPlaylistsCtrl'
+          }
+        }
+    })
+      .state('app.list', {
+        url: '/list',
+        views: {
+          'menuContent': {
+            templateUrl: 'templates/fleaMarket/lists.html',
+            controller: 'tzlistCtrl'
+          }
+        }
+      })
+      .state('app.phone', {
+        url: '/phone',
+        views: {
+          'menuContent': {
+            templateUrl: 'templates/fleaMarket/tz-phone.html',
+            controller: 'tzlistCtrl'
+          }
+        }
+      })
+      .state('app.computer', {
+        url: '/computer',
+        views: {
+          'menuContent': {
+            templateUrl: 'templates/fleaMarket/tz-computer.html',
+            controller: 'tzlistCtrl'
+          }
+        }
+      })
+      .state('app.books', {
+        url: '/books',
+        views: {
+          'menuContent': {
+            templateUrl: 'templates/fleaMarket/tz-books.html',
+            controller: 'tzlistCtrl'
+          }
+        }
+      })
+      .state('app.bike', {
+        url: '/bike',
+        views: {
+          'menuContent': {
+            templateUrl: 'templates/fleaMarket/tz-bike.html',
+            controller: 'tzlistCtrl'
+          }
+        }
+      })
+      .state('app.game', {
+        url: '/game',
+        views: {
+          'menuContent': {
+            templateUrl: 'templates/fleaMarket/tz-game.html',
+            controller: 'tzlistCtrl'
+          }
+        }
+      })
+      .state('app.clothes', {
+        url: '/clothes',
+        views: {
+          'menuContent': {
+            templateUrl: 'templates/fleaMarket/tz-clothes.html',
+            controller: 'tzlistCtrl'
+          }
+        }
+      })
+
+      .state('app.issue', {
+        url: '/issue',
+        views: {
+          'menuContent': {
+            templateUrl: 'templates/fleaMarket/tz-issue.html',
+            controller: 'issueCtrl'
+          }
+        }
+      })
+
+      .state('app.tzdetail', {
+        url: '/tzdetail/:id',
+        views: {
+          'menuContent': {
+            templateUrl: 'templates/fleaMarket/tz-xq1.html',
+            controller: 'tzdetailCtrl'
+          }
+        }
+      })
+
+      .state('app.searchlist', {
+        url: '/searchlist',
+        views: {
+          'menuContent': {
+            templateUrl: 'templates/fleaMarket/search-list.html',
+            controller: 'searchlistCtrl'
+          }
+        }
       });
 
-
+    /******************************************/
 
     // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/app/playlists');

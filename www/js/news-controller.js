@@ -108,5 +108,106 @@ angular.module('starter.controllers', [])
       { title: '奔跑吧青年', id: 5 ,img:'./img/new-list1.jpg',ps:'当你还在纠结要不要做设计，当你还在苦恼为什么自己怀才不遇，当你还在不曾思考我改做什么....'},
       { title: '奔跑吧青年', id: 6 ,img:'./img/new-list2.jpg',ps:'当你还在纠结要不要做设计，当你还在苦恼为什么自己怀才不遇，当你还在不曾思考我改做什么....'}
     ];
-  });
+  })
+
+
+  .controller('tzPlaylistsCtrl',['$scope','$location','$stateParams','$state', function($scope,$location,$stateParams,$state) {
+    $scope.title = '跳骚市场';
+    $scope.datas = [
+      { id:1,img:'../img/tz-c1.jpg',name:'时尚工艺品' ,prinf:'100',msg:'ipad pro2 32G,国行。去年行入手，用了几个月，8成新有意者请与我联系',time:'5分钟前',num:'125'},
+      { id:2,img:'../img/tz-c2.jpg',name:'ipad 九成新' ,prinf:'2000',msg:'ipad pro2 32G,国行。去年行入手，用了几个月，8成新有意者请与我联系',time:'5分钟前',num:'125'},
+      { id:3,img:'../img/tz-c3.jpg',name:'时尚工艺品' ,prinf:'1500',msg:'ipad pro2 32G,国行。去年行入手，用了几个月，8成新有意者请与我联系',time:'5分钟前',num:'125'},
+      { id:4,img:'../img/tz-c4.jpg',name:'ipad 九成新',prinf:'1000',msg:'ipad pro2 32G,国行。去年行入手，用了几个月，8成新有意者请与我联系',time:'5分钟前',num:'125'},
+      { id:5,img:'../img/tz-c5.jpg',name:'ipad 九成新',prinf:'1000',msg:'ipad pro2 32G,国行。去年行入手，用了几个月，8成新有意者请与我联系',time:'5分钟前',num:'125'},
+      { id:6,img:'../img/tz-c6.jpg',name:'ipad 九成新',prinf:'1000',msg:'ipad pro2 32G,国行。去年行入手，用了几个月，8成新有意者请与我联系',time:'5分钟前',num:'125'},
+      { id:7,img:'../img/tz-c7.jpg',name:'ipad 九成新',prinf:'1000',msg:'ipad pro2 32G,国行。去年行入手，用了几个月，8成新有意者请与我联系',time:'5分钟前',num:'125'},
+      { id:8,img:'../img/tz-c2.jpg',name:'ipad 九成新',prinf:'1000',msg:'ipad pro2 32G,国行。去年行入手，用了几个月，8成新有意者请与我联系',time:'5分钟前',num:'125'}
+    ];
+
+    $scope.detail = $scope.datas[$stateParams.id-1];
+    console.log($scope.detail);
+
+    $scope.go = function () {
+      $location.path('/app/searchlist');
+    };
+
+    $scope.go1 = function () {
+      $location.path('/app/list');
+    };
+
+  }])
+
+  .controller('tzPlaylistCtrl',['$scope','$location', function($scope,$location) {
+    $scope.datas = [
+      { id:1,img:'../img/tz-c1.jpg',name:'时尚工艺品' ,prinf:'100',peo:'../img/tz-peo1.jpg'},
+      { id:2,img:'../img/tz-c2.jpg',name:'ipad 九成新' ,prinf:'2000',peo:'../img/tz-peo2.jpg'},
+      { id:3,img:'../img/tz-c3.jpg',name:'时尚工艺品' ,prinf:'1500',peo:'../img/tz-peo1.jpg'},
+      { id:4,img:'../img/tz-c4.jpg',name:'ipad 九成新',prinf:'1000',peo:'../img/tz-peo2.jpg'}
+    ];
+
+    $scope.xq = function () {
+      $location.path('/app/issue');
+    }
+
+    $scope.go3 = function () {
+      $location.path('/app/detail');
+    };
+
+  }])
+
+  .controller('tzlistCtrl',['$scope', function($scope) {
+    $scope.datas = [
+      { id:1,img:'../img/tz-c1.jpg',name:'时尚工艺品' ,prinf:'100',msg:'ipad pro2 32G,国行。去年行入手，用了几个月，8成新有意者请与我联系',time:'5分钟前',num:'125'},
+      { id:2,img:'../img/tz-c2.jpg',name:'ipad 九成新' ,prinf:'2000',msg:'ipad pro2 32G,国行。去年行入手，用了几个月，8成新有意者请与我联系',time:'5分钟前',num:'125'},
+      { id:3,img:'../img/tz-c3.jpg',name:'时尚工艺品' ,prinf:'1500',msg:'ipad pro2 32G,国行。去年行入手，用了几个月，8成新有意者请与我联系',time:'5分钟前',num:'125'},
+      { id:4,img:'../img/tz-c4.jpg',name:'ipad 九成新',prinf:'1000',msg:'ipad pro2 32G,国行。去年行入手，用了几个月，8成新有意者请与我联系',time:'5分钟前',num:'125'},
+      { id:5,img:'../img/tz-c5.jpg',name:'ipad 九成新',prinf:'1000',msg:'ipad pro2 32G,国行。去年行入手，用了几个月，8成新有意者请与我联系',time:'5分钟前',num:'125'},
+      { id:6,img:'../img/tz-c6.jpg',name:'ipad 九成新',prinf:'1000',msg:'ipad pro2 32G,国行。去年行入手，用了几个月，8成新有意者请与我联系',time:'5分钟前',num:'125'},
+      { id:7,img:'../img/tz-c7.jpg',name:'ipad 九成新',prinf:'1000',msg:'ipad pro2 32G,国行。去年行入手，用了几个月，8成新有意者请与我联系',time:'5分钟前',num:'125'},
+      { id:8,img:'../img/tz-c2.jpg',name:'ipad 九成新',prinf:'1000',msg:'ipad pro2 32G,国行。去年行入手，用了几个月，8成新有意者请与我联系',time:'5分钟前',num:'125'}
+    ];
+
+  }])
+
+  .controller('issueCtrl',['$scope','$location', function($scope,$location) {
+
+  }])
+
+  .controller('searchlistCtrl',['$scope', function($scope) {
+
+    $scope.bold = "bold";
+    $scope.title = 'name';
+    $scope.desc = 0;
+
+    $scope.datas = [
+      { id:1,img:'../img/tz-c1.jpg',name:'时尚工艺品' ,prinf:'100',msg:'ipad pro2 32G,国行。去年行入手，用了几个月，8成新有意者请与我联系',time:'5分钟前',num:'125'},
+      { id:2,img:'../img/tz-c2.jpg',name:'ipad 九成新' ,prinf:'2000',msg:'ipad pro2 32G,国行。去年行入手，用了几个月，8成新有意者请与我联系',time:'5分钟前',num:'125'},
+      { id:3,img:'../img/tz-c3.jpg',name:'时尚工艺品' ,prinf:'1500',msg:'ipad pro2 32G,国行。去年行入手，用了几个月，8成新有意者请与我联系',time:'5分钟前',num:'125'},
+      { id:4,img:'../img/tz-c4.jpg',name:'ipad 九成新',prinf:'1000',msg:'ipad pro2 32G,国行。去年行入手，用了几个月，8成新有意者请与我联系',time:'5分钟前','num':'125'},
+      { id:5,img:'../img/tz-c5.jpg',name:'ipad 九成新',prinf:'1000',msg:'ipad pro2 32G,国行。去年行入手，用了几个月，8成新有意者请与我联系',time:'5分钟前',num:'125'},
+      { id:6,img:'../img/tz-c6.jpg',name:'ipad 九成新',prinf:'1000',msg:'ipad pro2 32G,国行。去年行入手，用了几个月，8成新有意者请与我联系',time:'5分钟前',num:'125'},
+      { id:7,img:'../img/tz-c7.jpg',name:'ipad 九成新',prinf:'1000',msg:'ipad pro2 32G,国行。去年行入手，用了几个月，8成新有意者请与我联系',time:'5分钟前','num':'125'},
+      { id:8,img:'../img/tz-c2.jpg',name:'ipad 九成新',prinf:'1000',msg:'ipad pro2 32G,国行。去年行入手，用了几个月，8成新有意者请与我联系',time:'5分钟前',num:'125'}
+    ];
+
+    $scope.key = '';
+
+  }])
+
+  .controller('tzdetailCtrl',['$scope','$stateParams', function($scope,$stateParams) {
+    $scope.datas = [
+      { id:1,img:'../img/tz-c1.jpg',name:'时尚工艺品' ,prinf:'100',msg:'ipad pro2 32G,国行。去年行入手，用了几个月，8成新有意者请与我联系',time:'5分钟前',num:'125'},
+      { id:2,img:'../img/tz-c2.jpg',name:'ipad 九成新' ,prinf:'2000',msg:'ipad pro2 32G,国行。去年行入手，用了几个月，8成新有意者请与我联系',time:'5分钟前',num:'125'},
+      { id:3,img:'../img/tz-c3.jpg',name:'时尚工艺品' ,prinf:'1500',msg:'ipad pro2 32G,国行。去年行入手，用了几个月，8成新有意者请与我联系',time:'5分钟前',num:'125'},
+      { id:4,img:'../img/tz-c4.jpg',name:'ipad 九成新',prinf:'1000',msg:'ipad pro2 32G,国行。去年行入手，用了几个月，8成新有意者请与我联系',time:'5分钟前','num':'125'},
+      { id:5,img:'../img/tz-c5.jpg',name:'ipad 九成新',prinf:'1000',msg:'ipad pro2 32G,国行。去年行入手，用了几个月，8成新有意者请与我联系',time:'5分钟前',num:'125'},
+      { id:6,img:'../img/tz-c6.jpg',name:'ipad 九成新',prinf:'1000',msg:'ipad pro2 32G,国行。去年行入手，用了几个月，8成新有意者请与我联系',time:'5分钟前',num:'125'},
+      { id:7,img:'../img/tz-c7.jpg',name:'ipad 九成新',prinf:'1000',msg:'ipad pro2 32G,国行。去年行入手，用了几个月，8成新有意者请与我联系',time:'5分钟前','num':'125'},
+      { id:8,img:'../img/tz-c2.jpg',name:'ipad 九成新',prinf:'1000',msg:'ipad pro2 32G,国行。去年行入手，用了几个月，8成新有意者请与我联系',time:'5分钟前',num:'125'}
+    ];
+
+    $scope.detail = $scope.datas[$stateParams.id-1];
+    // console.log($scope.detail);
+
+  }]);
 

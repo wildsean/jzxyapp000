@@ -1,0 +1,203 @@
+/* Empty. Add your own CSS if you like */
+
+/*首页*/
+* {
+  margin: 0;
+  padding: 0;
+  white-space: normal
+}
+a {
+  text-decoration: none;
+  color: #666;
+}
+ion-header-bar.bar-stable.bar.bar-header.has-tabs-top {
+  background: #3dbcff;
+}
+
+#menu img {
+  width: .6rem;
+  height: .6rem;
+  margin-right: .1rem;
+}
+#menu .sp {
+  vertical-align: top;
+  line-height: 3em;
+  font-size: .2rem;
+}
+#menu .arr {
+  float: right;
+  font-size: .2rem;
+  line-height: 3em;
+}
+
+#search {
+  font-size: 2.4em;
+  margin: .15rem;
+}
+
+#tz .zhonglei {
+  padding: 0 .1rem;
+}
+#tz .zhonglei li {
+  display: inline-block;
+  margin: .2rem .3rem .1rem .25rem;
+}
+#tz .zhonglei li img{
+  width: .9rem;
+  height: .9rem;
+}
+#tz .zhonglei li p {
+  text-align: center;
+  font-size: .2rem;
+  margin-bottom: 0;
+  color: #000;
+}
+
+.znew {
+  font-size:.28rem;
+  margin: .1rem;
+  color: #666;
+}
+.znew img{
+  width:.28rem;
+  height: .28rem;
+  vertical-align: middle;
+}
+#tz .sping #ul {
+  display: inline-block;
+  vertical-align: top;
+  width: 3.02rem;
+  height: 2.3rem;
+  margin: 0 0 .15rem .12rem;
+  padding: .05rem;
+}
+#tz .sping div img{
+  width: 3rem;
+  height: 1.76rem;
+  margin-top: .05rem;
+}
+#tz .sping a.item-content {
+  padding: 0;
+  margin: 0;
+}
+
+#tz .sping p{
+  text-align: left;
+  margin: .05rem .1rem;
+  font-size: .2rem;
+}
+#tz .sping p span{
+  float: right;
+  color: #666;
+}
+.card {
+  width: 45%;
+  margin: 0;
+}
+
+
+/*** 新首页 ***/
+.zxsj {
+  height: .19rem;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  margin: .3rem .1rem;
+}
+.zxsj span{
+  font-size: .3rem;
+  padding: 0 .15rem;
+  background: #fff;
+  color: #666;
+}
+
+.zx-list li {
+  display: inline-block;
+  margin: .15rem;
+  vertical-align: top;
+}
+
+/*** list ***/
+.list-cont {
+  margin-top: 4em;
+}
+.list-cont img{
+  width: 1.7rem;
+  height: 1.18rem;
+}
+.list-s {
+  vertical-align: top;
+  float: right;
+  color: #e42112;
+}
+
+
+/**** 发布 ****/
+.issue {
+  margin: .15rem 0;
+}
+.issue li{
+  width: 1.78rem;
+  height: 1.26rem;
+  display: inline-block;
+  padding: .05rem;
+  margin: 0 .1rem 0 .15rem;
+  border: 1px solid #ccc;
+  vertical-align: top;
+}
+.issue li img{
+  width: 1.68rem;
+  height: 1.16rem;
+}
+
+.bdan {
+  padding: .15rem;
+}
+.bdan li {
+  border: 1px solid #ccc;
+  margin-bottom: .15rem;
+  line-height: .5rem;
+  padding: 0 .2rem;
+}
+.bdan li label{
+  display: inline-block;
+  font-size: .2rem;
+  width: 1rem;
+  vertical-align:middle;
+
+}
+.bdan li input{
+  display: inline-block;
+  width: 4.6rem;
+  font-size: .2rem;
+  padding: .2rem;
+  margin-bottom: .02rem;
+}
+.bdan li textarea{
+  width: 5.6rem;
+  font-size: .2rem;
+  line-height: 1.4em;
+  resize:none;
+}
+
+
+#xq {
+  width: 6.1rem;
+  padding: .1rem;
+  margin:.15rem;
+}
+#xq .xq-s1 {
+  margin-top: .1rem;
+}
+#xq .xq-s2 {
+  float: right;color: #666;
+}
+#xq .xq-s3 {
+  color: #f60;
+}
+#xq .xq-s4 {
+  margin-left: .2rem;
+  text-decoration:line-through;
+  color: #666;
+}
+
+

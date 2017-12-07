@@ -1,0 +1,72 @@
+<ion-view view-title="{{title}}">
+
+  <!--<ion-nav-title class="title">-->
+  <!--跳蚤市场-->
+  <!--</ion-nav-title>-->
+  <ion-nav-buttons side="right">
+    <ion-nav-button ng-click="go()">
+        <i class="icon ion-ios-search-strong" id="search"></i>
+    </ion-nav-button>
+  </ion-nav-buttons>
+
+  <ion-content id="tz">
+    <img src="../../img/tz-t1.jpg" alt="" style="width: 100%;">
+    <ul class="zhonglei">
+      <li>
+        <a ng-href="#/app/phone">
+          <img src="../../img/tz-l1.jpg" alt="">
+          <p>手机</p>
+        </a>
+      </li>
+      <li>
+        <a ng-href="#/app/computer">
+          <img src="../../img/tz-l2.jpg" alt="">
+          <p>电脑</p>
+        </a>
+      </li>
+      <li>
+        <a ng-href="#/app/books">
+          <img src="../../img/tz-l3.jpg" alt="">
+          <p>书籍</p>
+        </a>
+      </li>
+      <li>
+        <a ng-href="#/app/bike">
+          <img src="../../img/tz-l4.jpg" alt="">
+          <p>自行车</p>
+        </a>
+      </li>
+      <li>
+        <a ng-href="#/app/game">
+          <img src="../../img/tz-l5.jpg" alt="">
+          <p>游戏</p>
+        </a>
+      </li>
+      <li>
+        <a ng-href="#/app/clothes">
+          <img src="../../img/tz-l6.jpg" alt="">
+          <p>衣物</p>
+        </a>
+      </li>
+      <li ng-click="go1()">
+        <!--<a ng-href="/app/list.html">-->
+          <img src="../../img/tz-l7.jpg" alt="">
+          <p>更多</p>
+        <!--</a>-->
+      </li>
+    </ul>
+
+    <div class="znew">
+      <img src="../../img/tz-lb_03.jpg" alt=""><a ng-href="playlist.html">最新上架</a>
+    </div>
+    <div class="sping">
+      <ion-item class="item-remove-animate" ng-repeat="x in datas"  type="item-text-wrap"  ng-href="#/app/detail/{{x.id}}" id="ul">
+        <div class="item item-image">
+          <img ng-src="{{x.img}}" style="width: 98%;">
+        </div>
+        <p>{{x.name}}<span class="">{{x.time}}</span></p>
+      </ion-item>
+    </div>
+  </ion-content>
+
+</ion-view>

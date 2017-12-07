@@ -1,0 +1,50 @@
+<ion-view view-title="列表">
+
+  <ion-nav-buttons side="right">
+    <ion-nav-button ng-click="">
+      <i class="icon ion-compose" id="search"></i>
+    </ion-nav-button>
+  </ion-nav-buttons>
+
+  <div class="tabs tabs-striped tabs-top">
+    <a href="#/app/list" class="tab-item">
+      全部
+    </a>
+    <a href="#/app/phone" class="tab-item">
+      手机
+    </a>
+    <a href="#/app/computer" class="tab-item active">
+      电脑
+    </a>
+    <a href="#/app/books" class="tab-item">
+      书籍
+    </a>
+    <a href="#/app/bike" class="tab-item">
+      自行车
+    </a>
+    <a href="#/app/game" class="tab-item">
+      游戏
+    </a>
+    <a href="#/app/clothes" class="tab-item">
+      衣物
+    </a>
+  </div>
+
+  <ion-content>
+
+    <div class="list-cont">
+      <ion-item class="item-remove-animate item-thumbnail-left" ng-repeat="x in datas"  type="item-text-wrap"  ng-href="#/app/tzdetail/{{x.id}}" id="">
+        <img ng-src="{{x.img}}" alt="">
+        <h2 style="display: inline-block;">{{x.name}}</h2>
+        <span class="list-s">&yen;{{x.prinf}}</span>
+        <p>{{x.peo}}</p>
+
+        <div>
+          <span>{{x.time}}</span>
+          <span style="float: right;"><i class="icon ion-ios-clock-outline"></i> {{x.num}}人浏览</span>
+        </div>
+    </div>
+
+  </ion-content>
+</ion-view>
+

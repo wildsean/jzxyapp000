@@ -1,0 +1,38 @@
+
+<ion-view view-title="列表">
+
+  <ion-nav-buttons side="right">
+    <ion-nav-button ng-click="">
+      <i class="icon ion-compose" id="search"></i>
+    </ion-nav-button>
+  </ion-nav-buttons>
+  <ion-list>
+    <ion-item class="item-input" style="margin-top: 2.5em;">
+      <span class="item-input-wrapper" style="margin-right:.16rem">
+        <i class="icon ion-ios-search placeholder-icon" ng-click="search()"></i>
+        <input id="search1" type="search" placeholder="请输入您想要的" ng-model="datas.key">
+        <i class="icon ion-close-circled placeholder-icon" style="vertical-align: middle;"
+           on-tap="clearSearch()" ng-if="datas.key.length"></i>
+      </span>
+    </ion-item>
+    <ion-item class="" ng-repeat="item in itemArr2"></ion-item>
+  </ion-list>
+
+  <ion-content>
+
+    <div class="list-cont">
+      <ion-item class="item-remove-animate item-thumbnail-left" ng-repeat="x in datas"  type="item-text-wrap"  ng-href="#/app/tzdetail/{{x.id}}" id="">
+        <img ng-src="{{x.img}}" alt="">
+        <h2 style="display: inline-block;">{{x.name}}</h2>
+        <span class="list-s">&yen;{{x.prinf}}</span>
+        <p>{{x.peo}}</p>
+
+        <div>
+          <span>{{x.time}}</span>
+          <span style="float: right;"><i class="icon ion-ios-clock-outline"></i> {{x.num}}人浏览</span>
+        </div>
+    </div>
+
+  </ion-content>
+</ion-view>
+

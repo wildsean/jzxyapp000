@@ -1,0 +1,79 @@
+
+
+<ion-view view-title="详情">
+
+  <ion-nav-buttons side="right">
+    <ion-nav-button ng-click="">
+      <i class="icon ion-ios-person" id="search"></i>
+    </ion-nav-button>
+  </ion-nav-buttons>
+
+
+  <ion-content>
+
+    <div class="list card" id="xq">
+      <div class="item item-image">
+        <img ng-src="{{detail.img}}">
+      </div>
+      <p class="xq-s1">{{detail.name}}<spqn class="xq-s2">浏览次数3251</spqn></p>
+      <p><span class="xq-s3">&yen;{{detail.prinf}}</span><span class="xq-s4">&yen;350</span></p>
+    </div>
+
+    <div class="has-header">
+      <div class="card" style="width: 6.1rem;">
+        <div class="item item-divider">
+          详细信息
+        </div>
+        <div class="item item-avatar">
+          <img src="../../img/tz-peo1.jpg">
+          <h2>Pretty Hate Machine <span style="float: right;color: #666;">2天前</span></h2>
+          <p>#2宿舍楼205</p>
+          <p style="width: 4.8rem;white-space: normal">
+            <!--手工艺品单车工艺品单车单楚辞之外我们也可以将自己的生活信息 发布到"叽咋校园"上，将它作为一个平......-->
+            <!--手工艺品单车工艺品单车单楚辞之外我们也可以将自己的生活信息发布到"叽咋校园"上，将它作为一个平......-->
+            {{detail.msg}}
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="has-header"  style="margin-bottom: 6em;">
+      <div class="card" style="width: 6.1rem;">
+        <div class="item item-divider">
+          留言
+        </div>
+        <div class="item item-avatar">
+          <img src="../../img/tz-peo2.jpg">
+          <h2>Pretty Hate Machine <span style="float: right;color: #666;">2天前</span></h2>
+          <p style="width: 4.8rem;white-space: normal">
+            手工艺品单车工艺品单车单楚辞之外我们也可以将自己的生活信息 发布到"叽咋校园"上，将它作为一个平......
+            手工艺品单车工艺品单车单楚辞之外我们也可以将自己的生活信息发布到"叽咋校园"上，将它作为一个平......
+          </p>
+        </div>
+        <div class="item item-avatar">
+          <img src="../../img/tz-peo1.jpg">
+          <h2>Pretty Hate Machine <span style="float: right;color: #666;">2天前</span></h2>
+          <p style="width: 4.8rem;white-space: normal">
+            手工艺品单车工艺品单车单楚辞之外我们也可以将自己的生活信息 发布到"叽咋校园"上，将它作为一个平......
+            手工艺品单车工艺品单车单楚辞之外我们也可以将自己的生活信息发布到"叽咋校园"上，将它作为一个平......
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </ion-content>
+
+  <div class="bar bar-footer bar-serve" style="background-color: #eee;">
+    <button ion-button icon-only>
+      <i class="icon ion-ios-mic-outline"></i>
+    </button>
+    <button ion-button icon-only>
+      <i class="icon ion-ios-plus-empty"></i>
+    </button>
+    <input type="text" style="padding:0 .15rem;width: 4.4rem;margin-right: .2rem;">
+    <button class="button btn- icon ion-ios-paperplane" style="background-color: #999;color: #fff;"></button>
+  </div>
+
+</ion-view>

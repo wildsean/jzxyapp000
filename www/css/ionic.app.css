@@ -5750,9 +5750,7 @@ ion-tabs.tabs-striped.tabs-color-active-dark .tab-item.tab-item-active, ion-tabs
   .item .badge + .badge {
     margin-right: 5px; }
   .item.item-light {
-    border-color: #ddd;
-    background-color: #fff;
-    color: #444; }
+    @incldue item-style($item-light-bg, $item-light-border, $item-light-text); }
   .item.item-stable {
     border-color: #b2b2b2;
     background-color: #387ef5;

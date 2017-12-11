@@ -1,0 +1,309 @@
+
+a.d_product {
+  color: #444;
+  text-decoration: none;
+}
+a.ion-search {
+  /*color: #ffffff;*/
+  font-size: 25px;
+}
+.previous-title {
+  display: none;
+}
+/*777*/
+.bar .title.title-left {
+  text-align: center !important;
+}
+.e_style {
+  width: 100%;
+}
+.e_style  h2 {
+  color: #b6b6b6;
+  padding: 0 10px;
+  font-size: 20px;
+  margin: 10px 0 5px 0;
+}
+.e_style  h2 img {
+  width: 14px;
+}
+#d_content {
+
+}
+.dd_page h2 {
+  font-size: 20px;
+  color: #353535;
+}
+.dd_page h2 span {
+  color: #ff6200;
+  float: right;
+  font-size: 20px;
+}
+.dd_page h3 {
+  font-size: 18px;
+  margin-top: 40px;
+  height: 40px;
+  font-weight: 400;
+  color: #353535;
+  border-bottom:1px solid #dedede;
+}
+
+.dd_page p {
+  font-size: 16px;
+  color: #999999;
+  margin: 10px 0;
+  text-overflow: clip;
+  white-space: pre-wrap;
+}
+.dd_page dl {
+  color: #312f37;
+  font-weight: 300;
+
+}
+.item {
+  border-color: #ddd;
+  background-color: #fff;
+  padding: 0 10px;
+  border-width: 1px;
+  border-style: solid;
+
+}
+.item .dd_img{
+  width: 100%;
+}
+.dd_page dl dt{
+  font-weight: normal;
+  font-size: 15px;
+}
+.dd_page dl dd {
+  font-size: 14px;
+  margin: 10px 0;
+  color: #000000;
+}
+.dd_page dl dd span {
+  float: left;
+  width: 50px;
+  text-align: center;
+
+}
+
+.buttons-right a {
+  margin-top: 4px;
+}
+#d_content {
+  transform:scale(.2,.2);
+}
+[nav-bar-transition="ios"] [nav-bar="active"] .bar, [nav-bar-transition="ios"] [nav-bar="entering"] .bar {
+  /*background: #4c93eb;*/
+}
+[nav-bar-transition="android"] [nav-bar="active"] .bar, [nav-bar-transition="android"] [nav-bar="entering"] .bar {
+  /*background: #4c93eb;*/
+}
+.bar .title.title-left {
+  text-align: center;
+}
+
+
+
+#e_ul li {
+  border: 1px solid #dedede;
+  width: 304px;
+  height: 254px;
+  float: left;
+  margin: 8px;
+  overflow: hidden;
+}
+
+.bar-stable .button.button-icon {
+  color: #fff;
+}
+
+.buttons .right-buttons a.ion-search{
+  color: #444;
+}
+.bar-stable .button.button-clear {
+  color: #fff;
+
+}
+.bar.bar-stable .title {
+  color: #fff;
+}
+.back-button .back-text .previous-title{
+  color: #ffffff;
+}
+#e_ul li {
+  width: 45%;
+  height: 18%;
+}
+#e_ul li * {
+  width: 100%;
+
+}
+#e_ul a {
+  text-decoration: none;
+
+}
+#e_ul h3 {
+  color: #323232;
+  margin: 1px 0;
+  font-size: 18px;
+}
+
+#e_ul span {
+  font-size: 14px;
+}
+#e_ul .e_info {
+  margin: 0 10px;
+}
+#e_ul .price {
+  color: #fd6805;
+  float: left;
+}
+#e_ul .t_class {
+  color: #989898;
+  float: right;
+}
+.dd_info1 {
+  transform: scale(.8);
+  margin-left: -60px;
+  width: 640px;
+}
+.d_info {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 20px;
+}
+.d_info p {
+  color: #ff6600;
+  font-size: 24px;
+  margin-bottom: 26px;
+}
+.bar .title.title-left {
+  text-indent: -15px;
+}
+.d2_info {
+  position: absolute;
+  left: 360px;
+  bottom: 0;
+}
+.d_info h2 {
+  height: 50px;
+  color: #333333;
+  padding: 10px 0;
+  font-size: 24px;
+}
+.buttons-right a {
+  font-size: 30px;
+  color: #444444;
+}
+ion-item.i_search {
+  background-color: #f6f6f6;
+}
+span.back-text {
+  display: none!important;
+}
+input.search {
+  width: 100%;
+  height: 40px;
+  margin: 10px 0;
+  font-size: 26px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+.swiper-container {
+  width: 400px;
+  height: 180px!important;
+  overflow: hidden;
+}
+
+.pagination {
+  position: absolute;
+  z-index: 20;
+  bottom: 0px;
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.swiper-pagination-bullet {
+  margin: 0 4px;
+  background: #fff;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background-color: #000;
+}
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background: #222;
+  margin: 0 10px;
+  opacity: 0.8;
+  border: 1px solid #33cd5f;
+  cursor: pointer;
+}
+.swiper-active-switch {
+  background: #33cd5f;
+}
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
+  padding-left: 20px;
+}
+
+
+#d_cntent .item {
+  padding: 0!important;
+}
+#my_view {
+  position: fixed;
+  overflow: hidden;
+  background-color: #f6f6f6;
+  bottom: -80px;
+  height: 80px;
+  z-index: 555;
+  width: 100%;
+}
+#my_view input {
+  margin: 20px;
+  vertical-align: top;
+  height: 40px;
+  width: 180px;
+  border-radius: 20px;
+}
+
+#d_content .item {
+
+  padding: 0 16px ;
+
+}
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+.swiper-slide img {
+  width: 100%;
+}
+.item-iocn-right{
+  border-bottom: none;
+  width: 100%;
+  overflow: auto;
+  height:calc(100vh - 120px);
+}
+#my_view span.ex1_img {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  left: 220px;
+  height: 40px;
+}
+#my_view span.ex2_img {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  left: 290px;
+  height: 40px;
+
+}

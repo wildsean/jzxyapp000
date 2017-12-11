@@ -1,0 +1,28 @@
+<ion-view view-title="{{title}}">
+  <ion-content id="#d_content">
+
+    <ion-item class="i_search" ng-controller="myctrl">
+
+      <input type="text"  placeholder="Search" class="search" ng-moudle="input">
+
+    </ion-item>
+    <ion-item ng-repeat="p in product" class="item-left d_list">
+      <div class="dd_info1">
+        <a href="#/app/extremity/{{p.id}}" class="d_product ">
+          <img ng-src="{{p.poster}}" alt="">
+          <div class="d_info">
+            <h2>{{p.name}}</h2>
+            <p>¥{{p.price}}</p>
+            <span class="ion-ios-clock-outline"> 共计{{p.time}}课时</span>
+          </div>
+        </a>
+        <div class="d2_info">
+          <span class="ion-thumbsup" ng-click="count = count + 1" ng-init="count=0">{{count}}</span>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="#/app/extremity/{{p.id}}"  class="d_product"><span class="ion-chatbubble-working"></span></a>
+        </div>
+      </div>
+    </ion-item>
+
+  </ion-content>
+</ion-view>
+

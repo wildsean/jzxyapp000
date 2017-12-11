@@ -5,7 +5,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers'])
+angular.module('starter', ['ionic', 'starter.controllers','education.controller'])
 
   .run(function($ionicPlatform) {
     $ionicPlatform.ready(function() {
@@ -32,16 +32,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         templateUrl: 'templates/menu.html',
         controller: 'AppCtrl'
       })
-
-      .state('app.search', {
-        url: '/search',
-        views: {
-          'menuContent': {
-            templateUrl: 'templates/search.html'
-          }
-        }
-      })
-
       .state('app.browse', {
         url: '/browse',
         views: {
@@ -93,7 +83,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       })
 
 
-    //job路由
+      //job路由
       .state('app.market', {
         url: '/market',
         views: {
@@ -123,9 +113,9 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       })
 
 
-    /***************** 跳蚤市场 *****************/
-    //跳蚤 首页
-    .state('app.playlists', {
+      /***************** 跳蚤市场 *****************/
+      //跳蚤 首页
+      .state('app.playlists', {
         url: '/playlists',
         views: {
           'menuContent': {
@@ -133,7 +123,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
             controller: 'tzPlaylistsCtrl'
           }
         }
-    })
+      })
       .state('app.list', {
         url: '/list',
         views: {
@@ -226,8 +216,34 @@ angular.module('starter', ['ionic', 'starter.controllers'])
             controller: 'searchlistCtrl'
           }
         }
+      })
+      .state('app.education', {
+        url: '/education',
+        views: {
+          'menuContent': {
+            templateUrl: 'templates/education.html',
+            controller: 'EducationCtrl'
+          }
+        }
+      })
+      .state('app.jydetail', {
+        url: '/jydetail/:productId',
+        views: {
+          'menuContent': {
+            templateUrl: 'templates/jy-detail.html',
+            controller: 'DetailCtrl'
+          }
+        }
+      })
+      .state('app.extremity', {
+        url: '/extremity/:productId',
+        views: {
+          'menuContent': {
+            templateUrl: 'templates/extremity.html',
+            controller: 'ExtremityCtrl'
+          }
+        }
       });
-
     /******************************************/
 
     // if none of the above states are matched, use this as the fallback

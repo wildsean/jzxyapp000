@@ -1,0 +1,26 @@
+<ion-view view-title="{{title}}" >
+  <ion-content class="dd_page">
+    <ion-item ng-repeat="d in detail" class="item-iocn-right">
+
+      <img ng-src="{{d.poster}}" alt="" class="dd_img">
+      <h2>{{d.name}}<span>&yen;{{d.price}}</span></h2>
+      <p class="ion-ios-clock-outline"> 共计{{d.time}}课时</p>
+      <p class="ion-ios-stopwatch-outline">上课时间:{{d.t_class}}</p>
+      <p class="ion-ios-location-outline">上课地点:{{d.place}}</p>
+      <h3>课程简介</h3>
+      <p>{{d.introduce}}</p>
+      <h3>课程目录</h3>
+      <dl>
+        <dt>第一章{{d.a_title}}</dt>
+        <dd ng-repeat="dd in d.menu"><span>{{$index+1}}</span>{{dd.a}}</dd>
+      </dl>
+
+    </ion-item>
+    <div id="my_view">
+      <input type="text" placeholder="写评论">
+      <span class="ex1_img"><img ng-src="../img/ex_01.png" alt=""></span>
+      <span class="ex2_img"><img ng-src="../img/ex_02.png" alt=""></span>
+    </div>
+  </ion-content>
+</ion-view>
+
